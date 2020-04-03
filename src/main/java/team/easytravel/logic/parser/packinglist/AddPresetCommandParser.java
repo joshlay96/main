@@ -19,7 +19,6 @@ public class AddPresetCommandParser implements Parser<AddPresetCommand> {
      * @throws ParseException if the user input does not conform the expected format
      */
     public AddPresetCommand parse(String args) throws ParseException {
-        System.out.println(args);
         try {
             if (args.length() < 1) { //The case where nothing is placed after packing list item
                 throw new ParseException(String.format(MESSAGE_INVALID_COMMAND_FORMAT,
