@@ -194,7 +194,7 @@ This section contains all the information you need to know about the features of
 
 You are required to set a trip before other features are unlocked. <<UserGuide.adoc#set-a-new-trip, See Section 4.1.2 Set a new trip>>  to learn how to set a trip.
 
-=== Trip Management
+==== Trip Management
 
 This feature allows you to manage your trip. You can record the following information about your trip:
 * Title
@@ -204,7 +204,7 @@ This feature allows you to manage your trip. You can record the following inform
 * End date
 
 [#trip-management-command-parameters]
-==== Trip Management Command Parameters
+===== Trip Management Command Parameters
 Before you jump right into using this feature, you may want to learn about all the common command parameters used in this feature. The table below shows the list of common command parameters that will be used for this feature.
 
 
@@ -273,17 +273,15 @@ Refer to <<UserGuide.adoc#trip-management-command-parameters, Section 4.1.1 Trip
 
 If you are all ready to start planning for your trip and you want to set a trip to get started, follow these steps below. You will learn how to set a graduation trip that starts on *28 September 2020* and ends on *5 October 2020* with a budget of *$5000* and an exchange rate of *76.7*.
 
-****
 Setting a new trip:
 
 . Type `settrip title/Graduation Trip budget/5000 exchangerate/76.6 startdate/28-09-2020 enddate/05-10-2020` into the _Command Box_.
 . Press `Enter` to execute.
-
 Outcome:
 
-. The _Result Display_ will show a success message.
-. You can now see your trip information on the _Trip Information Panel_.
-****
+* The _Result Display_ will show a success message.
+* You can now see your trip information on the _Trip Information Panel_.
+
 
 .Outcome of a successful settrip command
 image::user-guide/SetTrip.png[]
@@ -307,22 +305,19 @@ Refer to <<UserGuide.adoc#trip-management-command-parameters, Section 4.1.1 Trip
 
 Assume that you have accidentally titled the trip wrongly to *Craduation Trip* instead of *Graduation Trip*, you can do the following steps.
 
-****
 Renaming the trip:
 
 . Type rename `Graduation Trip` into the _Command Box_.
 . Press `Enter` to execute.
-
 Outcome:
 
-. The _Result Display_ will show a success message.
-. You can now see your updated trip title on the _Trip Information Panel_.
-****
+* The _Result Display_ will show a success message.
+* You can now see your updated trip title on the _Trip Information Panel_.
 
 .Outcome of a successful rename
 image::user-guide/RenameTrip.png[]
 
-===== Edit the trip’s budget: `editbudget`
+===== Editing the trip’s budget: `editbudget`
 
 You can use this command to change the budget of the trip.
 
@@ -340,7 +335,6 @@ You can use this command to change the budget of the trip.
 
 Let’s say after planning your expenses, you realised that you would want to increase your budget to $6000. Follow the following steps to do that.
 
-****
 Editing the trip budget:
 
 . Type `editbudget 6000` into the _Command Box_.
@@ -348,9 +342,9 @@ Editing the trip budget:
 
 Outcome:
 
-. The _Result Display_ will show a success message.
-. You can now see your updated trip budget on the _Trip Information Panel_.
-****
+* The _Result Display_ will show a success message.
+* You can now see your updated trip budget on the _Trip Information Panel_.
+
 
 .Outcome of a successful editbudget
 image::user-guide/EditBudget.png[]
@@ -377,9 +371,8 @@ Deleting the current trip:
 . Press `Enter` to execute.
 
 Outcome:
-
-. The _Result Display_ will show a success message.
-. You can now see that no trip is set on the _Trip Information Panel_.
+* The _Result Display_ will show a success message.
+* You can now see that no trip is set on the _Trip Information Panel_.
 
 .Outcome of a successful deletetrip command
 image::user-guide/deletetrip.png[]
@@ -398,17 +391,14 @@ You can use this command to check the progress of your planning. This command wi
 *Example:*
 If you are planning for your trip halfway and feel lost, you can check your progress using the following steps. It can remind you of what you have to do next.
 
-****
 Deleting the current trip:
 
 . Type `status` into the _Command Box_.
 . Press `Enter` to execute.
 
 Outcome:
-
-. The _Result Display_ will show the message “Progress checker window is opened.”.
-. You will now see the following window.
-****
+* The _Result Display_ will show the message “Progress checker window is opened.”.
+* You will now see the following window.
 
 .Progress checker window
 image::user-guide/status.png[]
@@ -497,22 +487,22 @@ You can use this command to navigate to the Activities Tab and display all your 
 
 `listactivity`
 
+
+
 *Example:*
 
 If you are in another tab and wish to look at your list of activities, you can follow these instructions.
 
-****
 Listing all your activities:
 
-. Type `listactivity` into the __Command Box__.
-. Press `Enter` to execute.
+* Type `listactivity` into the __Command Box__.
+* Press `Enter` to execute.
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can now see all your activities.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can now see all your activities.
 
 ====  Add a new activity: `addactivity`
 
@@ -548,7 +538,6 @@ Let’s say you have an activity with the following information and wish to reco
 |sea, outdoor
 |===
 
-****
 Adding the above activity:
 
 . Type `addactivity title/Going to the beach duration/4 location/Hakone tag/sea tag/outdoor` into the Command Box.
@@ -556,10 +545,9 @@ Adding the above activity:
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can now see all your activities including the newly added activity.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can now see all your activities including the newly added activity.
 
 .Outcome of a successful addactivity command
 image::user-guide/addactivity.png[]
@@ -590,7 +578,6 @@ Editing the activity:
 
 Assume you have accidentally made a mistake in the spelling of the title of the *second* activity in the displayed list and wish to change it to “*Skiing*”. You do perform the following steps.
 
-****
 Editing the activity:
 
 . Type `editactivity 2 title/Skiing into the Command Box.`
@@ -598,10 +585,9 @@ Editing the activity:
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can now see all your activities including the edited activity.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can now see all your activities including the edited activity.
 
 .Outcome of a successful editactivity command
 image::user-guide/editactivity.png[]
@@ -622,7 +608,6 @@ You can use this command to delete an existing activity in *E.T.*.
 
 If you change your mind and decide to remove the *first* activity in the displayed list from your plan, you can perform the steps below.
 
-****
 Deleting the activity:
 
 . Type `deleteactivity 1` into the Command Box.
@@ -630,10 +615,9 @@ Deleting the activity:
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can now see the deleted activity no longer exists.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can now see the deleted activity no longer exists.
 
 ==== Sort the activity list: `sortactivity`
 
@@ -651,20 +635,18 @@ Outcome:
 
 If you want to sort your list of activities in descending order of duration, to help you in your planning, you can do the following.
 
-****
 Sorting activities:
 
-. Type `sortactivity` duration des into the Command Box.
-. Press `Enter` to execute.
+* Type `sortactivity` duration des into the Command Box.
+* Press `Enter` to execute.
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can see a list of sorted activities being displayed.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can see a list of sorted activities being displayed.
 
-==== Find activities by title: `findactivity`
+==== Find activities by keywords: `findactivity`
 You can use this command to find activities by keywords.
 
 *Format:*
@@ -681,29 +663,28 @@ You can use this command to find activities by keywords.
 
 Let say your list has a bunch of activities and you want to search for a specific one about shopping. You can do so as follows.
 
-****
 Finding activities:
 
-. Type `findactivity shopping` into the _Command Box_.
+. Type `findactivity` shopping into the _Command Box_.
 . Press `Enter` to execute.
 
 Outcome:
 
-. The _Result Display_ will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can see a list of activities with the keyword being displayed.
-****
+* The _Result Display_ will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can see a list of activities with the keyword being displayed.
+
 
 .Outcome of a successful findactivity command
 image::user-guide/FindActivity.png[]
 
-==== Find activities by tag: `findactivitytag`
+==== Find activities by keywords: `findactivitytag`
 You can use this command to find activities by tags.
 
 
 *Format:*
 
-`findactivitytag KEYWORD [MORE_KEYWORDS]...`
+`findactivitytag TAG_NAME ...`
 
 [NOTE]
 ====
@@ -724,200 +705,76 @@ You can use this command to clear and delete the whole list of activities in *E.
 
 In the case that you want to restart your activity planning from scratch, you can do the following.
 
-****
 Clearing the activity list:
-
 . Type `clearactivity` into the Command Box.
 . Press Enter to execute.
 
 Outcome:
 
-. The Result Display will show a success message.
-. *E.T.* will switch to the Activities Tab.
-. You can see that the list is now empty.
-****
+* The Result Display will show a success message.
+* *E.T.* will switch to the Activities Tab.
+* You can see that the list is now empty.
+
 
 === Transportation Booking Management
 
-This feature allows you to manage your transportation bookings for the trip. You can record the following information about your transport bookings:
+The following sections [4.3.1 to 4.3.3] allows the user to manage transportation bookings for the trip.
 
-=====
-- Mode of transport
-- Starting location
-- Destination
-- Time of departure
-- Time of arrival
-=====
+==== Create new transportation booking: `addtransport`
 
-==== Transport Booking Management Command Parameters
-Before you jump right in to use this feature, you may want to learn about all the common command parameters used in this feature. The table below shows the list of common command parameters that will be used for this feature.
+If you have a new transportation booking, you can use this command to store the information and it will store the booking into a list.
 
-[cols="1,5a", options="header"]
-|===
-|Parameter Name
-|Description
-
-|`MODE`
-| The mode of transport
-
-* It can take the value of `plane`, `bus`, `car`, `train` and `others`.
-* E.g. plane
-
-|`START_LOCATION`
-| The starting location
-
-* It must be alphanumeric words not more than 50 characters long.
-* E.g. `Singapore Changi Airport`
-
-|`END_LOCATION`
-| The destination
-
-* It must be alphanumeric words not more than 50 characters long.
-* E.g. `KL International Airport`
-
-|`START_TIME`
-| The time of departure
-
-* It must be in the format of dd-MM-yyyy HH:mm where HH:mm is the 24hr format time.
-* It must fall within the time frame of the trip and must not be later than the `END_TIME`.
-* E.g. `28-09-2020 13:00`
-This example means 28 September 2020 at 1:00 PM.
-
-|`END_TIME`
-| The time of arrival
-
-* It must be in the format of dd-MM-yyyy HH:mm where HH:mm is the 24hr format time.
-* It must fall within the time frame of the trip and must not be earlier than the `START_TIME`.
-* E.g. `30-09-2020 13:00`
-This example means 30 September 2020 at 1:00 PM.
-
-|`INDEX`
-| The index number of the transport booking entry in the displayed list. The first entry of the list has an index number of 1 and all the entries are listed in increasing index numbers.
-
-* It must be a valid index number.
-|===
-
-==== List all transport bookings: `listtransport`
-
-You can use this command to navigate to the Transportation Tab and display all your transport bookings in E.T..
-
-Format: `listtransport`
-
-Examples:
-`listtransport` +
-
-If you are in another tab and wish to look at your list of transport bookings, you can follow these instructions.
-
-****
-Listing your packing list:
-
-1. Type `listtransport` into the __Command Box__.
-2. Press `Enter` to execute.
-
-Outcome:
-
-1. The __Result Display__ will show a success message.
-2. **E.T.** will switch to the __Packing List Tab__.
-3. You can now see your transport bookings.
-****
-
-.After the list transport command
-image::user-guide/ListTransport.png[]
-
-==== Add a new transport booking: `addtransport`
-
-You can use this command to add a new transport booking to **E.T.**
-
-Format: `addtransport name/NAME quantity/QUANTITY category/CATEGORY`
+Format: `addtransport mode/MODE startloc/START_LOCATION endloc/END_LOCATION starttime/DATE_TIME_OF_DEPARTURE endtime/DATE_TIME_OF_ARRIVAL`
 
 [NOTE]
-=====
-- If a duplicated transport is added, it will let the user know that the transport is already in the list.
-- Refer to Section 4.3.1 Transport Booking Management Command Parameters for detail about each parameter.
-=====
+====
+- `MODE` can be one of the following: `plane`, `bus`, `car`, `train`, `others`.
+- `DATE_TIME_OF_DEPARTURE` and `DATE_TIME_OF_ARRIVAL` needs to be in the format `dd-MM-yyyy HH:mm`. `HH:mm` is the 24hr format time.
+====
 
-Example:
+Examples:
 
-`addtransport name/underwear quantity/5 category/clothes` +
+`addtransport mode/plane startloc/Singapore endloc/Japan starttime/22-04-2021 09:00 endtime/22-04-2021 16:00`
 
-Let’s say you have a transport booking with the following information and wish to record it in **E.T.**
+If you have a plane booking, you can use `addtransport` to add the booking with the start location, end location, start time and end time.
 
-[cols="1,2"]
-|===
-
-| Mode of transport
-| plane
-
-| Starting location
-| Singapore
-
-| Destination
-| Japan
-
-| Time of departure
-| 28 September 2020 at 9:00 AM
-
-| Time of arrival
-| 28 September 2020 at 4:00 PM
-|===
-
-You can follow these instructions:
-
-****
-Adding the above transport booking:
-
-1. Type `addtransport mode/plane startloc/Singapore endloc/Japan starttime/28-09-2020 09:00 endtime/28-09-2020 16:00` into the __Command Box__.
-2. Press `Enter` to execute.
-
-Outcome:
-
-1. The __Result Display__ will show a success message.
-2. **E.T.** will switch to the __Transportation Tab__.
-3. You can now see all your transport bookings including the newly added transport booking.
-
-****
-
-.After add transport command
+.After add transport booking command
 image::user-guide/AddTransportBooking.png[]
 
-==== Edit an existing packing list transport: `edittransport`
+==== Edit transportation booking: `edittransport`
 
-You can use this command to edit an existing transport booking in **E.T.**
+If you have details for a given transport booking, you can use this command to edit certain details of the booking.
 
-Format: `edittransport INDEX [name/NAME] [quantity/QUANTITY] [category/CATEGORY]`
+Format: `edittransport INDEX [mode/MODE] [startloc/START_LOCATION] [endloc/END_LOCATION] [starttime/DATE_TIME_OF_DEPARTURE] [endtime/DATE_TIME_OF_ARRIVAL]`
 
 [NOTE]
-=====
+====
+- `INDEX` refers to the index number shown in the displayed transport booking list. `INDEX` *must be a positive integer* 1, 2, 3, ...
+- At least one of the optional fields must be provided.
 - Existing values will be updated to the input values.
-- You must supply at least one optional parameter.
-- Refer to Section 4.3.1 Transport Booking Management Command Parameters for more detail about each parameter.
-=====
+- `MODE` can take one of the following values: `plane`, `bus`, `car`, `train`, `others`.
+- `DATE_TIME_OF_DEPARTURE` and `DATE_TIME_OF_ARRIVAL` needs to be in the format `dd-MM-yyyy HH:mm`. `HH:mm` is the 24hr format time.
+====
 
 Examples:
 
-`edittransport 5 transport/boxer` +
+`edittransport 2 starttime/22-04-2021 10:00`
 
-Assuming that you have entered the wrong time of departure for the second transport booking and want to change it to `28 September 2020, 10:00 AM`.
+In the case that the start time has changed to 22 April 2021 1000hr, you can use `edittransport` to change it.
 
-****
-Editing the transport booking:
-
-1. Type `edittransport 2 starttime/28-09-2021 10:00` into the __Command Box__.
-2. Press `Enter` to execute.
-
-Outcome:
-
-1. The __Result Display__ will show a success message.
-2. **E.T.** will switch to the __Transportation Tab__.
-3. You can now see all your transport bookings including the edited transport booking.
-****
-
-.After edit transport command
+.After edit transport booking command
 image::user-guide/EditTransportBooking.png[]
 
-==== Delete an existing transportation booking: `deletetransport`
+`edittransport 4 mode/plane endloc/Italy`
 
-This command would delete the transport booking at the `INDEX` that you specified. The `INDEX` should be corresponding to the index shown in the transport booking list.
+In the case that you want to change the end location and mode of transport, you can use `edittransport` to change it.
+
+.After edit transport booking command
+image::user-guide/EditTransportBooking2.png[]
+
+==== Delete transportation booking: `deletetransport`
+
+In the case that you want to remove the transport booking, you can use this command to remove it from the list.
 
 Format: `deletetransport INDEX`
 
@@ -928,279 +785,125 @@ Examples:
 
 `deletetransport 1`
 
-Suppose you decided to cancel the flight you had booked previously. In **E.T.**, the flight that you have entered is stored at `INDEX` 1. You can follow the instructions below.
-
-****
-Deleting the transport booking:
-
-1. Type `deletetransport 1` into the __Command Box__.
-2. Press `Enter` to execute.
-
-Outcome:
-
-1. The __Result Display__ will show a success message.
-2. **E.T.** will switch to the __Transportation Tab__.
-3. You can now see that **E.T.** has deleted the flight at `INDEX` 1
-****
+You can delete a transport booking by using the `deletetransport` command
 
 .After delete transport booking command
 image::user-guide/DeleteTransportBooking.png[]
 
-==== Clear all transportation bookings: `cleartransport`
+==== Clear transportation booking: `cleartransport`
 
-This command will clear every transport booking you have made.
+If you want to remove all the transportation bookings that you have made, this command will return an empty list for you to start working with again.
 
 Format: `cleartransport`
 
+[IMPORTANT]
+This command will remove all the transportation booking that is in your current list
+
 Example:
 
-`cleartransport` +
+ cleartransport
 
-Assume you decided to cancel all your bookings at once but you do not want to delete the entire trip. You can use this command to easily wipe all traces of previous transportation booking entries and start on a clean slate.
+You can use `cleartransport` to clear all transportation bookings in the list
 
-****
-Clearing all transport bookings:
-
-1. Type `cleartransport` into the __Command Box__.
-2. Press `Enter` to execute.
-
-Outcome:
-
-1. The __Result Display__ will show a success message.
-2. **E.T.** will switch to the __Transportation Tab__.
-3. You can now see that **E.T.** has cleared all your transport bookings.
-****
-
-.After clear transport booking command
+.After edit transport booking command
 image::user-guide/ClearTransportBooking.png[]
 
 === Accommodation Booking
 
-The following feature allows you to manage all  accommodation bookings.
+The following sections [4.4.1 to 4.4.3] allows the user to set and modify accommodation bookings in the trip.
 
-[#accommodation-booking-management-command-parameters]
-==== Accommodation Booking Management Command Parameters
+===== Create a new accommodation booking: `addacc`
 
-Before you jump right into using this feature, you may want to learn about all the common command parameters used in this feature. The table below shows the list of common command parameters that will be used for this feature.
-
-
-|===
-|Parameter Name |Description
-
-|`NAME`
-|The name of the accommodation booking
-
-It must be alphanumeric words not more than 50 characters long.
-
-E.g. `Ritz Carlton`
-
-
-|`LOCATION`
-|The location of the accommodation booking
-
-It must be alphanumeric words not more than 50 characters long.
-
-E.g. `KL`
-
-
-|`START_DAY`
-|The start day of the accommodation booking
-
-It must be a positive integer and it cannot be a number larger than `END_DAY`
-
-
-|`END_DAY`
-|The end day of the accommodation booking
-
-It must be a positive integer and cannot exceed the length of the trip
-
-|`REMARK`
-|The remark of the accommodation booking
-
-It cannot be more than 150 characters long.
-
-
-|`INDEX`
-|The index number of the accommodation booking in the displayed list. The first entry of the list has an index number of `1` and all the entries are listed in increasing index numbers.
-
-It must be a valid index number.
-
-|===
-
-==== List all accommodation bookings: `listacc`
-
-You can use this command to navigate to the __Accommodation Tab__ and display all your activities in **E.T.**.
-
-Format: `listacc`
-
-Example:
-If you are in another tab and wish to look at your list of accommodation bookings, you can follow these instructions.
-
-****
-Listing all your activities:
-
-. Type `listacc` into the __Command Box__.
-. Press `Enter` to execute.
-
-Outcome:
-
-. The __Result Display__ will show a success message.
-. *E.T.* will switch to the __Accommodation Tab__.
-. You can now see all your accommodation bookings.
-****
-
-
-==== Add a new accommodation booking: `addacc`
-
-This command would add a new accommodation booking into your list of accommodations.
+If you have made an accommodation booking, you can use this command to store it into a list and be able to keep track of it.
 
 Format: `addacc name/NAME loc/LOCATION startday/START_DAY endday/END_DAY [remark/REMARK]`
 
-NOTE: Refer to <<UserGuide.adoc#accommodation-booking-management-command-parameters, Section 4.4.1 Trip Management Command Parameters>> for more detail about each parameter.
+[NOTE]
+====
+- `NAME` and `LOCATION` must be made of alphanumeric characters, and it must be less than 50 characters long
+- `START_DAY` and `END_DAY` needs to be positive integers
+- `START_DAY` refers to the day that you check in
+- `END_DAY` refers to the day that you check out
+- `REMARK` must be less than 150 characters long
+====
 
 Examples:
 
-Let’s say you have secured a booking of the accommodation “JW Marriott Hotel” at the location “KL”. You can run the following command to record this into your list of accommodations.
+`addacc name/JW Marriott Hotel loc/KL startday/2 endday/4`
 
-
-|===
-|Accommodation Booking |
-
-|Name
-|JW Marriott Hotel
-
-|Location
-|KL
-
-|Start Day
-|2
-
-|End Day
-|3
-|===
-
-****
-Adding the above activity:
-
-. Type `addacc name/JW Marriott Hotel loc/KL startday/2 endday/4` into the __Command Box__.
-. Press `Enter` to execute.
-
-Outcome:
-
-. The __Result Display__ will show a success message.
-. **E.T.* *will switch to the __Accommodation Tab__.
-. You can now see all your accommodation bookings including the newly added accommodation booking.
-****
+If you have a new accommodation booking for JW Marriott Hotel at KL on the 2nd day to the 4th day, you can create it using the `addacc` command
 
 .After add accommodation booking command
 image::user-guide/AddAccommodationBooking.png[]
 
-==== Edit an existing accommodation booking: `editacc`
+==== Edit accommodation booking: `editacc`
 
-This command will edit any mistakes made in the details of the accommodation booking using the specified `INDEX`.
+If you have to adjust the details of the accommodation booking and you wish to make changes, you can use this command to edit the necessary information.
 
 Format: `editacc INDEX [name/NAME] [loc/LOCATION] [startday/START_DAY] [endday/END_DAY] [remark/REMARK]`
 
-NOTE: Refer to <<UserGuide.adoc#accommodation-booking-management-command-parameters, Section 4.4.1 Trip Management Command Parameters>> for more detail about each parameter.
+[NOTE]
+====
+- `INDEX` refers to the index number shown in the displayed transport booking list. `INDEX` *must be a positive integer* 1, 2, 3, ...
+- `NAME` and `LOCATION` must be made of alphanumeric characters, and it must be less than 50 characters long
+- `START_DAY` and `END_DAY` needs to be positive integers
+- `START_DAY` refers to the day that you check in
+- `END_DAY` refers to the day that you check out
+- `REMARK` must be less than 150 characters long
+====
 
 Examples:
 
-Let’s say you decided to change the accommodation booking you have input earlier to have a check in day of 4 and check out day of 6.
+`editacc 2 startday/4 endday/6`
 
-****
-Editing the accommodation booking:
-
-. Type `editacc 2 startday/4 endday/6` into the __Command Box__.
-. Press `Enter` to execute.
-
-Outcome:
-
-. The __Result Display__ will show a success message.
-. **E.T.* *will switch to the __Accommodation Tab__.
-. You can now see all your accommodation bookings including the edited accommodation booking.
-****
+In the case that you want to change the start day and end day of the 2nd accommodation, you can use `editacc` command.
 
 .After edit accommodation booking command
 image::user-guide/EditAccommodationBooking.png[]
 
+`editacc 3 address/Hilton KL remark/Check-in at 2pm`
 
-==== Delete an existing accommodation booking: `deleteacc`
+You can also use this command to change the third accommodation booking in the list to Hilton, set the location to KL and change the remark to check in at 2pm.
 
-This command would delete the accommodation booking you have added earlier using the specified `INDEX`
+.After edit accommodation booking command
+image::user-guide/EditAccommodationBooking2.png[]
+
+
+==== Delete accommodation booking: `deleteacc`
+
+Assuming you have another accommodation booking and plan to delete the previous one that you set on the same days, you can use this command to remove it.
 
 Format: `deleteacc INDEX`
 
-NOTE: Refer to <<UserGuide.adoc#accommodation-booking-management-command-parameters, Section 4.4.1 Trip Management Command Parameters>> for more detail about each parameter.
+[NOTE]
+`INDEX` refers to the index number shown in the displayed transport booking list. `INDEX` *must be a positive integer* 1, 2, 3, ...
 
 Examples:
 
-Let’s say you decided to cancel on the accommodation booking that you have made earlier. The accommodation booking that you want to cancel is stored in `INDEX` 2 of *E.T.* , thus running the following command would delete the accommodation booking entry.
+`deleteacc 2`
 
-****
-Deleting the activity:
+You can use `deleteacc` to delete the second accommodation booking.
 
-. Type `deleteactivity 1` into the _Command Box_.
-. Press `Enter` to execute.
+.After delete accommodation booking command
+image::user-guide/DeleteAccommodationBooking.png[]
 
-Outcome:
+==== Clear accommodation booking: `clearacc`
 
-. The __Result Display__ will show a success message.
-. **E.T.* *will switch to the __Accommodation Tab__.
-. You can now see the deleted accommodation booking no longer exists.
-****
-
-==== Sort the accommodation booking list: `sortacc`
-
-You can use this command to sort the displayed list of accommodation bookings.
-
-Format: `sortacc CRITERIA ORDER`
-
-[NOTE]
-====
-`CRITERIA` refers to the criteria to sort the list of accommodation bookings by. It can take the following values: `name`, `location`, `day`.
-
-`ORDER` refers to the order to sort the list of accommodation bookings by. It can take the value of `ascending` or `asc` to sort in ascending order and `descending` or `des` to sort in descending order.
-====
-
-Example:
-
-If you want to sort your list of accommodation bookings in ascending order of name, to help you in your planning, you can do the following.
-
-****
-Sorting activities:
-
-. Type `sortacc name asc` into the __Command Box__.
-. Press Enter to execute.
-
-Outcome:
-
-. The __Result Display__ will show a success message.
-. **E.T.* *will switch to the __Accommodation Tab__.
-. You can see a list of sorted accommodation bookings being displayed.
-****
-
-==== Clear all accommodation bookings: `clearacc`
-
-This command allows you to clear all accommodation booking you have made previously.
+If you want to remove all the accommodation bookings that you have made, this command will return an empty list for you to start working with again.
 
 Format: `clearacc`
 
+[IMPORTANT]
+This command will remove all the accommodation bookings that is in your current list
+
 Example:
 
-Let’s say you decided to delete all accommodation bookings you have created without deleting the trip. Running this command would clear all prior accommodation booking created and let you start on a clean slate.
+ clearacc
 
-****
-Clearing the accommodation booking list:
+You can use `clearacc` to clear all accommodation bookings in the list
 
-. Type `clearacc` into the __Command Box__.
-. Press `Enter` to execute.
-
-Outcome:
-
-. The __Result Display__ will show a success message.
-. **E.T.* *will switch to the __Accommodation Tab__.
-. You can see that the list is now empty.
-****
+.After clear accommodation booking command
+image::user-guide/ClearAccommodationBooking.png[]
 
 === Packing List
 
@@ -1247,9 +950,10 @@ Before you jump right in to use this feature, you may want to learn about all th
 
 * It must be a positive integer 1,2,3…
 * E.g. 1
+
 |===
 
-==== List all packing list items: `listitem`
+====  Viewing all items in your packing list: `listitem`
 
 You can use this command to navigate to the __Packing List Tab__ and display your packing list in **E.T.**
 
@@ -1276,7 +980,7 @@ Outcome:
 .After the list item command
 image::user-guide/ListItem.png[]
 
-==== Add a new packing list item: `additem`
+==== Adding an item in the packing list: `additem`
 
 This command allows you to add a new item into your packing list.
 
@@ -1284,7 +988,7 @@ Format: `additem name/NAME quantity/QUANTITY category/CATEGORY`
 
 [NOTE]
 =====
-- If there is already an item in the packing list with the same name, then it will notify you of it.
+- If a duplicated item is added, it will let the user know that the item is already in the list.
 =====
 
 Example:
@@ -1324,7 +1028,7 @@ Outcome:
 .After add item command
 image::user-guide/AddItem.png[]
 
-==== Edit an existing packing list item: `edititem`
+==== Editing an item in the packing list: `edititem`
 
 This command allows you to edit any mistake made in the details of an existing item.
 
@@ -1379,9 +1083,9 @@ Outcome:
 .After edit item command
 image::user-guide/EditItem.png[]
 
-==== Delete an existing packing list item: `deleteitem`
+==== Deleting an item in the packing list: `deleteitem`
 
-This command would delete the packing list item at the `INDEX` that you specified. The `INDEX` should be corresponding to the index shown in the packing list.
+This commands deletes your item in the packing list.
 
 Format: `deleteitem INDEX`
 
@@ -1406,7 +1110,7 @@ Outcome:
 
 1. The __Result Display__ will show a success message.
 2. **E.T.** will switch to the __Packing List Tab__.
-3. You can now see that the item is deleted from your packing list.
+3. You can now the item is deleted from your packing list.
 ****
 
 .Before delete item command
@@ -1415,7 +1119,7 @@ image::user-guide/DeleteItem 1.png[]
 .After delete item command
 image::user-guide/DeleteItem 2.png[]
 
-==== Mark an existing packing list item as packed: `checkitem`
+==== Marking an item as packed in the packing list: `checkitem`
 
 This command marks an item as packed in your packing list.
 
@@ -1456,7 +1160,7 @@ image::user-guide/CheckItem 1.png[]
 .After check item command part 2
 image::user-guide/CheckItem 2.png[]
 
-==== Mark an existing packing list item as unpacked: `uncheckitem`
+==== Marking an item as unpacked in the packing list: `uncheckitem`
 
 This command marks an item as unpacked in your packing list.
 
@@ -1500,7 +1204,7 @@ image::user-guide/UncheckItem 2.png[]
 .After uncheck item command part 3
 image::user-guide/UncheckItem 3.png[]
 
-==== Sort the packing list: `sortitem`
+==== Sorting items in the packing list: `sortitem`
 
 This command sorts your items in the packing list according to an order and a criteria you specify.
 
@@ -1538,7 +1242,7 @@ image::user-guide/SortItem 1.png[]
 .After sort item command part 2
 image::user-guide/SortItem 2.png[]
 
-==== Find packing list items by name: `finditem`
+==== Finding items in the packing list: `finditem`
 
 This command finds items in your packing list according to keywords specified by you.
 
@@ -1548,7 +1252,7 @@ Format: `finditem KEYWORD [MORE_KEYWORDS]...`
 =====
 - Command can only be used if there is at least 1 item in the packing list.
 - If packing list does not contain any of the keywords, then it will display an empty list.
-- If you want to return to the packing list after using the `finditem` command, use the `listitem` command. (see Section 4.5.2)
+- If you want to return to the packing list after using the `finditem` command, use the `listitem` command. (see Section 4.5.9)
 - The result box will display the number of items that contains the keyword(s).
 - The `finditem` command will only search through the titles of the items
 =====
@@ -1575,7 +1279,7 @@ Outcome:
 .After find item command
 image::user-guide/FindItem.png[]
 
-==== Find packing list items by category: `finditemcategory`
+==== Finding item categories in the packing list: `finditemcategory`
 
 This command find items in your packing list according to keywords keywords specified by you that are categories
 
@@ -1585,9 +1289,8 @@ Format: `finditemcategory KEYWORD [MORE_KEYWORDS]...`
 =====
 - Command can only be used if there is at least 1 item in the packing list.
 - If packing list does not contain any of the keywords, then it will display an empty list
-- If you want to return to the packing list after using the `finditemcategory` command, use the `listitem` command. (see Section 4.5.2)
+- If you want to return to the packing list after using the `finditemcategory` command, use the `listitem` command. (see Section 4.5.9)
 - The result box will display the number of items that is in the categories of the given keyword(s).
-- The `finditemcategory` command will only search through the categories of the items
 =====
 
 Examples:
@@ -1612,7 +1315,7 @@ Outcome:
 .After find item category command
 image::user-guide/FindItemCategory.png[]
 
-==== Clear all packing list items: `clearitem`
+==== Clearing items in the packing list: `clearitem`
 
 This command clears all items in your packing list.
 
@@ -1634,13 +1337,13 @@ Outcome:
 
 1. The __Result Display__ will show a success message.
 2. **E.T.** will switch to the __Packing List Tab__.
-3. 3. You can now see that **E.T.** has cleared your packing list.
+3. You will now see an empty packing list.
 ****
 
 .After the clear item command
 image::user-guide/ClearItem.png[]
 
-==== Add a new preset category: `addpreset`
+==== Adding a preset category: `addpreset`
 
 This command adds a pre-existing list of items under a category into your packing list.
 
@@ -1650,7 +1353,7 @@ Format: `addpreset PRESET_NAME`
 =====
 - If the preset contains an item that is already in the packing list, it will not add that item in. It will add the rest of the items in the preset into the packing list.
 - You can only add in pre-existing presets. If you add in other presets, then you will receive the message, "Sorry! This preset does not exist."
-- To see all the available presets, use the `listpreset` command. (see Section 4.5.13)
+- To see all the available presets, use the `listpreset` command. (see Section 4.5.12)
 =====
 
 Examples:
@@ -1675,7 +1378,7 @@ Outcome:
 .After add preset command
 image::user-guide/AddPreset.png[]
 
-==== List all presets: `listpreset`
+==== Listing all the presets in the packing list: `listpreset`
 
 This command lists all the default presets available for you to use.
 
@@ -1710,7 +1413,7 @@ image::user-guide/ListPreset.png[]
 
 === Fixed Expense Manager
 
-The Fixed Expense Manager comprises a list which allows you to set fixed expenses before your trip. This would help you plan a suitable budget for your upcoming trip.
+The Fixed Expense Manager comprises a list which allows you to set your fixed expenses before your trip. This would help you plan a suitable budget for your upcoming trip.
 
 Examples of Fixed Expenses that you can include are as follows,
 ****
@@ -1765,7 +1468,7 @@ The first entry of the list has an index of `1` and all subsequent entries are l
 
 ==== List your Fixed Expenses: listexpense
 You can use the `listexpense` command to navigate to the Fixed Expense Manager.
-Alternatively, you can click on the Fixed Expense tab highlighted in Figure 40.
+Alternatively, you can click on the Fixed Expense tab.
 
 .Accessing Fixed Expense Manager
 image::user-guide/ListExpense.png[]
@@ -1776,24 +1479,21 @@ After successfully entering the fixed expense manager, you will see the screen s
 image::user-guide/FixedExpenseManager.png[]
 
 Thereafter, you will be able to add and subsequently modify your fixed expenses.
-This would be further elaborated in sections 4.6.3 below.
+This would be further elaborated in sections 4.6.3 - 4.6.7 below.
 
-==== Modifying expenses
 
-The following sections [4.6.3.1 - 4.6.3.5] allows a user to set and modify fixed expenses before the trip.
+==== Adding a new fixed expense: `addexpense`
 
-===== Add a new fixed expense: `addexpense`
-
-You can use this command to add a new expense into the Fixed Expense Manager.
+You can use this command to add a new fixed expense into the Fixed Expense Manager.
 
 Format: `addexpense amount/AMOUNT currency/CURRENCY description/DESCRIPTION category/CATEGORY`
 [NOTE]
 ====
 - Adds a new fixed expense for the upcoming trip.
 
-- The amount entered must be *must be a positive integer*
+- The `AMOUNT` entered *must be a positive integer*
 
-- The `DESCRIPTION` field must be alphanumeric words and contain 50 and 30 characters respectively.
+- The `DESCRIPTION` field must be alphanumeric words and contain 50 characters.
 
 - The `CATEGORY` field only accepts `transport`, `accommodations`, `others`, `activities`
 
@@ -1803,7 +1503,7 @@ field, the amount will be automatically converted to SGD using the exchange rate
 
 Example:
 
-Let’s say you wish to include an expense entry with the following information and wish to add it in the Fixed Expense Manager.
+Let’s say you wish to include an fixed expense entry with the following information and wish to add it in the Fixed Expense Manager.
 
 |===
 
@@ -1830,7 +1530,8 @@ Outcome:
 .After successfully adding a fixed expense
 image::user-guide/AddFixedExpense.png[]
 
-===== Edit an existing fixed expense: `editexpense`
+
+==== Edit your fixed expense: editexpense
 
 This command allows you to edit any mistakes that you might have accidentally included into the fixed expense manager. You can edit the details of an existing fixed expense entry based on the `INDEX` you have specified.
 
@@ -1838,14 +1539,11 @@ Format: `editexpense INDEX [amount/AMOUNT] [currency/CURRENCY]  [description/DES
 
 [NOTE]
 ====
-- Edits the expense at the specified `INDEX`. The index refers to the index number shown in the displayed fixed expense
-list.
 - The index *must be a positive integer* 1, 2, 3, ...
 - At least one of the optional fields must be provided.
 - Existing values will be updated to the input values.
-- The `DESCRIPTION` field must be alphanumeric words and contain 50 and 30 characters respectively.
+- The `DESCRIPTION` field must only contain alphanumeric words and contain 50 characters.
 - The `CATEGORY` field only accepts `transport`, `accommodations`, `others`, `activities`
-- If the user wishes to change the amount, they must indicate what currency the edited amount is in.
 - Both currency and amount fields must exist for a successful edit.
 - If the user enters the expense in other currency, the amount will be automatically converted to SGD using the exchange rate provided.
 - A *warning* will be shown to you if you have edited an expense such that you have overshot your budget.
@@ -1894,7 +1592,7 @@ Outcome:
 image::user-guide/EditFixedExpense.png[]
 
 
-===== Delete an existing fixed expense: `deleteexpense`
+==== Deleting a fixed expense: `deleteexpense`
 
 This command allows you to delete an existing fixed expense entry.
 
@@ -1925,7 +1623,7 @@ Outcome:
 .After successfully deleting a fixed expense
 image::user-guide/DeleteFixedExpense.png[]
 
-===== Clear all fixed expenses: `clearexpense`
+==== Clearing a fixed expense: `clearexpense`
 
 This command allows you to clear all Fixed Expenses in the list.
 
@@ -1934,8 +1632,7 @@ Format: `clearexpense`
 
 Example:
 
-Assuming that you wish to clear all your Fixed Expenses as you are planning for a new trip.
-Instead of deleting every single Fixed Expense, you could clear the list.
+Assuming that you wish to clear all your fixed expenses as you are planning for a new trip. You could clear the fixed expense manager using the `clearexpense` command instead of deleting every single fixed expense from your previous trip.
 
 ****
 To do so, follow these steps:
@@ -1954,7 +1651,7 @@ Outcome:
 .After successfully clearing all fixed expense
 image::user-guide/ClearFixedExpense.png[]
 
-===== Sort the fixed expense list: `sortexpense`
+==== Sort fixed expenses according to amount spent: `sortexpense`
 
 This command allows you to sort all your fixed expenses in the list.
 
@@ -1965,7 +1662,6 @@ Format: `sortexpense CRITERIA ORDER`
 * `ORDER` refers to the order to sort the Fixed Expenses by. It can take the value of `ascending` or `asc` to sort in ascending order or `descending` or `des` to sort in descending order.
 * `CRITERIA` refers to the criteria to sort the Fixed Expenses by. It can take these values, `[AMOUNT]` `[DESCRIPTION]` `[CATEGORY]`.
 * Only __one__ criteria can be included in the command.
-list in ascending or descending order dependent on what needs to be sorted.
 * The list must not be empty.
 ====
 
@@ -1990,6 +1686,7 @@ Outcome:
 .After successful sorting of fixed expense
 image::user-guide/SortFixedExpense.png[]
 
+
 === Features coming in Version 2.0
 
 The following sections [4.7.1 - 4.7.3] describes the various features that will be implemented in Version 2.0 of E.T.
@@ -1998,7 +1695,7 @@ The following sections [4.7.1 - 4.7.3] describes the various features that will 
 The following sections [4.7.1.1 - 4.7.1.2] describes the additional features which would be added to the *Packing List Manager* in version 2.0 of E.T.
 
 ===== Create a smart packing list: `createlist`
-This feature will allow you to create a smart packing list. The motivation behind it is to help inexperienced users with their packing list.
+This feature allows users to create a smart packing list. The motivation behind it is to help inexperienced users with their packing list.
 
 [NOTE]
 ====
@@ -2016,32 +1713,31 @@ this command will create a packing list based on the information provided.
 7 sets of adult and child summer clothing will be added into the packing list, along with toys for the children.
 
 ==== Export the packing list as a text file: `export`
-This feature would you to export their existing packing list into a formatted text file.
-The motivation behind it is to allow you to share your packing lists among each other freely.
+This feature would allow users to export their existing packing list into a formatted text file.
+The motivation behind it is to enable users to share their packing lists among each other freely.
 This will give inexperienced users a template to refer to while planning for their upcoming trips.
 
 === Fixed Expense Manager
-The following sections [4.8.1 - 4.8.2] describes the additional features which would be added to the packing list manager
+The following sections [4.7.2.1-4.7.2.2] describes the additional features which would be added to the packing list manager
 in Version 2.0 of E.T.
 
 ==== Recommend ways to save money based on prevailing usage
-Use complex algorithms to monitor and track your spending habits.
+Use complex algorithms to monitor and track the user's spending habits.
 Recommend ways to save money on certain items.
 
 ==== Automatically keep track of expenses
-Allow you to automatically keep track of your expenses and avoid entering your expenses on the application. Instead, all your expenses will be automatically entered into E.T.
+Avoid requiring the user to enter their expenses on the application. Instead, all their expenses will be automatically entered into E.T.
 
 === Improvements to E.T. Interface
-The following sections [4.9.1 - 4.9.2] describes the additional features which would be added to the general E.T. interface to make E.T. more user friendly.
+The following sections [4.7.3.1 - 4.7.3.2] describes the additional features which would be added to the general E.T. interface to make E.T. more user friendly.
 
 ==== Auto-Complete
-This feature would allow you who might be unfamiliar with E.T to type part of a command instead of the whole command.
+This feature would allow users who are unfamiliar with E.T to type part of a command instead of the whole command.
 
 ==== Undo/Redo
-This feature would allow you to undo or redo certain commands which are accidentally done.
+This feature would allow users to undo or redo certain commands which are accidentally done.
 
-==== Import and export of entire pre-trip data
-This feature would allow you to import and export your trip data to be freely shared with other uses of E.T.
+=== Import and export of data [Coming in V2.0]
 
 == *FAQ*
 *pass:[<u>TO BE EDITED</u>]*
@@ -2168,14 +1864,12 @@ This feature would allow you to import and export your trip data to be freely sh
 |===
 |Command |Example
 
-|**List Fixed Expenses*: `listexpense`
-|`listexpense`
+|*Add Fixed Expense* :  `addexpense amount/AMOUNT currency/CURRENCY
+description/DESCRIPTION category/CATEGORY`
+|`addexpense amount/1500 currency/sgd description/Plane Tickets category/transport`
 
-|*Add Fixed Expense* :  `amount/AMOUNT currency/CURRENCY description/DESCRIPTION category/CATEGORY`
-|`addexpense amount/1100 currency/SGD description/Plane Tickets category/Transport`
-
-|*Edit Fixed Expense* : `editexpense INDEX [amount/AMOUNT] [currency/CURRENCY]  [description/DESCRIPTION] [category/CATEGORY]`
-|`editexpense 1 amount/1500 currency/SGD description/editedtransport category/transport`
+|*Edit Fixed Expense* : `editexpense INDEX amount/AMOUNT currency/CURRENCY [description/DESCRIPTION] [category/CATEGORY]`
+|`editexpense 1 amount/3000 currency/sgd description/SQ Flight category/transport`
 
 |*Delete Fixed Expense* : `deleteexpense INDEX`
 |`deleteexpense 1`
@@ -2183,7 +1877,7 @@ This feature would allow you to import and export your trip data to be freely sh
 |*Clear Fixed Expenses* : `clearexpense`
 |`clearexpense`
 
-|*Sort Fixed Expenses* : `sortexpense CRITERIA ORDER`
-|`sortexpense amount des`
+|*Sort Fixed Expenses* : `sortexpense SORTIDENTIFIER [AMOUNT] [DESCRIPTION] [CATEGORY]`
+|`sortexpense asc amount`
 |===
 
