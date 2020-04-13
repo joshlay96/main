@@ -152,7 +152,7 @@ The `Ui` component,
 * Listens for changes to `Model` data so that the <<gui, __GUI__>> can be updated with the modified data.
 
 [#logic-component]
-[[Design-Logic]]
+[#Design-Logic]
 === Logic component
 (Contributed by Joshua Wee)
 
